@@ -11,8 +11,8 @@ services:
       - app-network
 
   corenlp:
-    image: nlpbox/corenlp
-    container_name: corenlp
+    image: nlpbox/nlproject
+    container_name: nlproject
     ports:
       - "9000:9000"
     restart: always
