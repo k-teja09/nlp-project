@@ -10,7 +10,9 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-nlp = StanfordCoreNLP('http://nlproject', port=9000)
+# nlp = StanfordCoreNLP('http://nlproject', port=9000)
+nlp = StanfordCoreNLP('http://localhost', port=9000)
+
 
 @app.route('/')
 def index():
